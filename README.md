@@ -10,6 +10,7 @@ This work is based on Pytorch implementation of BERT (https://github.com/hugging
 
 ### Environment:
 The code is tested with Python3.6 and Pytorch 1.0.0.
+Have to install Apex first
 
 ### Usage
 1. Download the dataset and unzip it. The default dataset directory is ./RACE
