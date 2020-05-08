@@ -1,4 +1,4 @@
-# BERT for RACE
+# BERT for RACE (for NLP Project Usage)
 
 By: Chenglei Si (River Valley High School)
 
