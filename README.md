@@ -19,10 +19,12 @@ Have to install Apex first
 1. 
 from google.colab import drive
 drive.mount('/content/drive')
+
 2. 
 ! git clone https://github.com/NVIDIA/apex
 cd /content/apex
 ! pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+
 3. 
 cd /content/BERT-RACE
 ! python run_race.py --data_dir=/content/drive/My\ Drive/COMP\ NLP\ Group\ Project/RACE --bert_model=bert-base-uncased --output_dir=base_models --max_seq_length=450 --do_train --do_eval --do_lower_case --train_batch_size=24 --eval_batch_size=4 --learning_rate=3e-5 --num_train_epochs=3 --gradient_accumulation_steps=8 --fp16 --loss_scale=128 && /root/shutdown.sh
