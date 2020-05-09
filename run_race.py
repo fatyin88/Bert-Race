@@ -420,8 +420,8 @@ def main():
         optimizer = FusedAdam(model.parameters(),
                                   lr=args.learning_rate)
         
-        model, optimizer = amp.initialize(model, optimizer, opt_level="O2", keep_batchnorm_fp32=False,
-                                                      loss_scale="dynamic")
+        model, optimizer = amp.initialize(model, optimizer, opt_level="O2",
+                                                      loss_scale=args.loss_scale)
         
     else:
         optimizer = BertAdam(optimizer_grouped_parameters,
